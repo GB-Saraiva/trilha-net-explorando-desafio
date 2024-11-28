@@ -44,7 +44,7 @@ namespace DesafioProjetoHospedagem.Models
             decimal valor = DiasReservados * Suite.ValorDiaria;
 
             // Aplica desconto de 10% caso os dias reservados sejam 10 ou mais
-            if (DiasReservados > 10)
+            if (DiasReservados >= 10)
             {
                 valor -= valor * 0.10m;
             }
